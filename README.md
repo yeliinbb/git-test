@@ -34,12 +34,38 @@ git init
 #### 원격 저장소 사용 관련한 명령어
 
 ```
-git remote add origin https://github.com/yeliinbb/git-test.git
+git remote add origin(원격 저장소의 별명) https://github.com/yeliinbb/git-test.git (원격 저장소의 주소)
+```
+
+```
 git branch -M main
+```
+
+```
 git push -u origin main
 ```
+
+- `u`는 앞으로 현재 브랜치를 `git push` 하면 계속해서 특정 원격 저장소로 보내겠다는 옵션
+
+```
+git clone
+```
+
+- 특정 원격 저장소를 '버전 관리 이력'까지 모두 포함하여 다운로드 받겠다는 명령어
+
+```
+git pull
+```
+
+- 원격 저장소의 업데이트 된 내용을 로컬 저장소로 다운 받겠다는 명령어
+
+### 브랜치 (Branch)
+
+> branches can be entirely independent of each other
+
+- 브랜치는 코드를 여러 버전으로 **나누어서 독립적으로 작업**할 수 있는 기능 / 공간
+- 각각의 브랜치는 서로 영향을 주지 않으므로, 다양한 기능 개발과 테스트 등에 유용하다.
 
 ## Git 명령어 정리
 
 - `git checkout` : 일종의 타임머신
--
